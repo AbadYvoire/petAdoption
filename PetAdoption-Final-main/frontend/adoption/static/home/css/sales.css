@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.nav-toggle-btn,
+.navbar-action-btn {
+  display: none;
+}
+
+.header {
+  --color: var(--eerie-black);
+  background: none;
+}
+
+.header.active {
+  --color: var(--portland-orange);
+  background-color: var(--white);
+}
+
+.header .logo,
+.header .action-btn {
+  color: var(--color);
+}
+
+.header .action-btn.user {
+  display: block;
+}
+
+.logo {
+  font-size: 3.8rem;
+}
+
+.navbar,
+.navbar.active {
+  all: unset;
+  margin-inline-end: auto;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-link {
+  color: var(--color);
+  --fs-6: 1.7rem;
+  font-weight: var(--fw-700);
+  transition: var(--transition-1);
+}
+
+.header.active .navbar-link:is(:hover, :focus) {
+  color: var(--portland-orange);
+}
+
+
+
+
